@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<solr persistent="true" sharedLib="lib">
+
+	<cores adminPath="/admin/cores">
+
+		<core name="main" instanceDir="main">
+			<property name="dataDir" value="main/data" />
+		</core>	
+
+		<core name="wlwwt" instanceDir="wlwwt" schema="german/schema.xml">
+			<property name="dataDir" value="wlwwt/data" />
+		</core>
+		
+		<core name="government" instanceDir="government" schema="german/schema.xml">
+			<property name="dataDir" value="government/data" />
+		</core>
+
+	</cores>
+
+</solr>
